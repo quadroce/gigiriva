@@ -66,13 +66,18 @@ def api_gigiriva_season(season, page):
 
 @app.route('/gigiriva')
 def gigiriva():
-    conn = sqlite3.connect('serie_a_seasons_downloadable.db')
+    conn = get_db_connection()
     cursor = conn.cursor()
-    cursor.execute("SELECT stagione, data, giornata, squadra_in_casa, squadra_in_trasferta, risultato, squadra_vincitrice, numero_di_trofei_conquistati, streak FROM matches")
-    gigiriva_data = [dict(zip([column[0] for column in cursor.description], row)) for row in cursor.fetchall()]
+    
+    cursor.execute("SELECT DISTINCT stagione FROM Gigiriva ORDER BY stagione")
+    seasons = [row['stagione'] for row in cursor.fetchall()]
+    
+    selected_season = request.args.get('season', seasons[0] if seasons else None)
+    cursor.execute("SELECT * FROM Gigiriva WHERE stagione = ? ORDER BY giornata", (selected_season,))
+    gigiriva_data = cursor.fetchall()
+    
     conn.close()
-    return render_template('gigiriva.html', gigiriva_data=gigiriva_data)
-
+    return render_template('gigiriva.html', seasons=seasons, selected_season=selected_season, gigiriva_data=gigiriva_data)
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))  # Ottieni la porta dalle variabili d'ambiente, default 5000
