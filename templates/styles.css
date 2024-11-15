@@ -9,3 +9,18 @@
 .shadow-sm {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
+/* Stile per rendere la tabella più accattivante */
+.table-bordered {
+    border: 2px solid #007bff;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+.table td {
+    text-align: center;
+    vertical-align: middle;
+}
