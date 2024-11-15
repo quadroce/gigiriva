@@ -1,3 +1,4 @@
+import os
 import sqlite3
 from flask import Flask, render_template, request, jsonify, g
 from db_setup import initialize_database
@@ -12,23 +13,6 @@ def get_db_connection():
         g.db = sqlite3.connect(DATABASE_PATH)
         g.db.row_factory = sqlite3.Row
     return g.db
-
-# Funzione per controllare se la tabella Gigiriva è piena
-def is_gigiriva_empty():
-    conn = get_db_connection()
-    cursor = conn.cursor()
-    cursor.execute("SELECT COUNT(*) FROM Gigiriva")
-    count = cursor.fetchone()[0]
-    conn.close()
-    return count == 0  # Ritorna True se è vuota, False se contiene dati
-
-# Usa il contesto dell'applicazione per chiamare `is_gigiriva_empty`
-with app.app_context():
-    if is_gigiriva_empty():
-        print("La tabella Gigiriva è vuota. Calcolo in corso...")
-        calculate_all_seasons()
-    else:
-        print("La tabella Gigiriva è già popolata. Nessun calcolo necessario.")
 
 @app.teardown_appcontext
 def close_db_connection(exception):
@@ -96,4 +80,5 @@ def gigiriva():
     return render_template('gigiriva.html', seasons=seasons, selected_season=selected_season, gigiriva_data=gigiriva_data)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))  # Ottieni la porta dalle variabili d'ambiente, default 5000
+    app.run(host='0.0.0.0', port=port, debug=True)
