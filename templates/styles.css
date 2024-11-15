@@ -1,0 +1,11 @@
+.card-title {
+    font-size: 1.8rem;
+    color: #007bff;
+}
+.card-text {
+    font-size: 1.1rem;
+    color: #495057;
+}
+.shadow-sm {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}

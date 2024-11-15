@@ -1,0 +1,222 @@
+2024-11-15 00:44:47,543 - Esecuzione Query: DELETE FROM Gigiriva
+2024-11-15 00:45:43,559 - Esecuzione Query: DELETE FROM Gigiriva
+2024-11-15 00:47:42,976 - Esecuzione Query: DELETE FROM Gigiriva
+2024-11-15 00:48:55,076 - Esecuzione Query: DELETE FROM Gigiriva
+2024-11-15 00:49:48,924 - Esecuzione Query: DELETE FROM Gigiriva
+2024-11-15 00:50:45,628 - Esecuzione Query: DELETE FROM Gigiriva
+2024-11-15 00:51:10,686 - Esecuzione Query: DELETE FROM Gigiriva
+2024-11-15 00:53:06,423 - Esecuzione Query: DELETE FROM Gigiriva
+2024-11-15 00:54:54,869 - Esecuzione Query: DELETE FROM Gigiriva
+2024-11-15 00:55:57,827 - Esecuzione Query: DELETE FROM Gigiriva
+2024-11-15 00:58:19,420 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-15 00:58:19,420 - [33mPress CTRL+C to quit[0m
+2024-11-15 00:58:19,427 -  * Restarting with stat
+2024-11-15 00:58:21,950 -  * Debugger is active!
+2024-11-15 00:58:21,963 -  * Debugger PIN: 151-771-068
+2024-11-15 00:58:30,685 - 127.0.0.1 - - [15/Nov/2024 00:58:30] "GET /gigiriva?season=serie_a_1991_1992 HTTP/1.1" 200 -
+2024-11-15 01:00:34,013 - 127.0.0.1 - - [15/Nov/2024 01:00:34] "GET /gigiriva?season=serie_a_1991_1992 HTTP/1.1" 200 -
+2024-11-15 01:00:39,093 - 127.0.0.1 - - [15/Nov/2024 01:00:39] "GET /gigiriva?season=serie_a_1929_1930 HTTP/1.1" 200 -
+2024-11-15 01:00:46,866 - 127.0.0.1 - - [15/Nov/2024 01:00:46] "GET /gigiriva?season=serie_a_1930_1931 HTTP/1.1" 200 -
+2024-11-15 01:00:52,270 - 127.0.0.1 - - [15/Nov/2024 01:00:52] "GET /gigiriva?season=serie_a_1931_1932 HTTP/1.1" 200 -
+2024-11-15 01:00:56,428 - 127.0.0.1 - - [15/Nov/2024 01:00:56] "GET /gigiriva?season=serie_a_1932_1933 HTTP/1.1" 200 -
+2024-11-15 01:10:28,078 -  * Detected change in 'C:\\GigiRiva\\app.py', reloading
+2024-11-15 01:10:28,254 -  * Restarting with stat
+2024-11-15 01:10:31,271 -  * Debugger is active!
+2024-11-15 01:10:31,283 -  * Debugger PIN: 151-771-068
+2024-11-15 01:11:21,638 - 127.0.0.1 - - [15/Nov/2024 01:11:21] "GET /gigiriva?season=serie_a_1932_1933 HTTP/1.1" 200 -
+2024-11-15 01:11:23,244 - 127.0.0.1 - - [15/Nov/2024 01:11:23] "GET / HTTP/1.1" 200 -
+2024-11-15 01:11:23,585 - 127.0.0.1 - - [15/Nov/2024 01:11:23] "[36mGET /static/logo.PNG HTTP/1.1[0m" 304 -
+2024-11-15 01:11:40,767 - 127.0.0.1 - - [15/Nov/2024 01:11:40] "GET /gigiriva HTTP/1.1" 200 -
+2024-11-15 01:11:44,662 - 127.0.0.1 - - [15/Nov/2024 01:11:44] "GET /gigiriva?season=serie_a_2023_2024 HTTP/1.1" 200 -
+2024-11-15 01:13:53,774 -  * Detected change in 'C:\\GigiRiva\\app.py', reloading
+2024-11-15 01:13:53,968 -  * Restarting with stat
+2024-11-15 01:13:56,686 -  * Debugger is active!
+2024-11-15 01:13:56,698 -  * Debugger PIN: 151-771-068
+2024-11-15 01:14:00,831 - 127.0.0.1 - - [15/Nov/2024 01:14:00] "[33mGET / HTTP/1.1[0m" 404 -
+2024-11-15 01:14:03,022 - 127.0.0.1 - - [15/Nov/2024 01:14:03] "[33mGET / HTTP/1.1[0m" 404 -
+2024-11-15 01:14:15,094 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-15 01:14:15,094 - [33mPress CTRL+C to quit[0m
+2024-11-15 01:14:15,099 -  * Restarting with stat
+2024-11-15 01:14:17,802 -  * Debugger is active!
+2024-11-15 01:14:17,816 -  * Debugger PIN: 151-771-068
+2024-11-15 01:14:18,856 - 127.0.0.1 - - [15/Nov/2024 01:14:18] "[33mGET / HTTP/1.1[0m" 404 -
+2024-11-15 01:14:41,104 -  * Detected change in 'C:\\GigiRiva\\app.py', reloading
+2024-11-15 01:14:41,288 -  * Restarting with stat
+2024-11-15 01:14:44,342 -  * Debugger is active!
+2024-11-15 01:14:44,356 -  * Debugger PIN: 151-771-068
+2024-11-15 01:14:44,753 - 127.0.0.1 - - [15/Nov/2024 01:14:44] "GET / HTTP/1.1" 200 -
+2024-11-15 01:14:44,998 - 127.0.0.1 - - [15/Nov/2024 01:14:44] "[36mGET /static/logo.PNG HTTP/1.1[0m" 304 -
+2024-11-15 01:17:30,865 - 127.0.0.1 - - [15/Nov/2024 01:17:30] "GET /gigiriva HTTP/1.1" 200 -
+2024-11-15 01:17:39,695 - 127.0.0.1 - - [15/Nov/2024 01:17:39] "GET /gigiriva?season=serie_a_1937_1938 HTTP/1.1" 200 -
+2024-11-15 01:17:48,950 - 127.0.0.1 - - [15/Nov/2024 01:17:48] "GET /gigiriva?season=serie_a_1938_1939 HTTP/1.1" 200 -
+2024-11-15 01:19:07,664 - 127.0.0.1 - - [15/Nov/2024 01:19:07] "GET / HTTP/1.1" 200 -
+2024-11-15 01:19:07,728 - 127.0.0.1 - - [15/Nov/2024 01:19:07] "[36mGET /static/logo.PNG HTTP/1.1[0m" 304 -
+2024-11-15 01:21:45,393 - 127.0.0.1 - - [15/Nov/2024 01:21:45] "GET / HTTP/1.1" 200 -
+2024-11-15 01:21:45,446 - 127.0.0.1 - - [15/Nov/2024 01:21:45] "[36mGET /static/logo.PNG HTTP/1.1[0m" 304 -
+2024-11-15 01:22:47,580 - 127.0.0.1 - - [15/Nov/2024 01:22:47] "GET /gigiriva HTTP/1.1" 200 -
+2024-11-15 01:23:03,172 - 127.0.0.1 - - [15/Nov/2024 01:23:03] "GET /gigiriva?season=serie_a_1930_1931 HTTP/1.1" 200 -
+2024-11-15 01:23:50,771 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-15 01:23:50,772 - [33mPress CTRL+C to quit[0m
+2024-11-15 01:23:50,777 -  * Restarting with stat
+2024-11-15 01:23:53,308 -  * Debugger is active!
+2024-11-15 01:23:53,321 -  * Debugger PIN: 151-771-068
+2024-11-15 01:24:09,682 - 127.0.0.1 - - [15/Nov/2024 01:24:09] "GET /gigiriva?season=serie_a_1930_1931 HTTP/1.1" 200 -
+2024-11-15 01:24:12,342 - 127.0.0.1 - - [15/Nov/2024 01:24:12] "GET /gigiriva?season=serie_a_1931_1932 HTTP/1.1" 200 -
+2024-11-15 01:24:30,014 -  * Detected change in 'C:\\GigiRiva\\app.py', reloading
+2024-11-15 01:24:30,292 -  * Restarting with stat
+2024-11-15 01:25:40,830 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-15 01:25:40,830 - [33mPress CTRL+C to quit[0m
+2024-11-15 01:25:40,836 -  * Restarting with stat
+2024-11-15 01:25:55,648 -  * Debugger is active!
+2024-11-15 01:25:55,663 -  * Debugger PIN: 151-771-068
+2024-11-15 01:26:09,860 - 127.0.0.1 - - [15/Nov/2024 01:26:09] "GET /gigiriva?season=serie_a_1931_1932 HTTP/1.1" 200 -
+2024-11-15 01:26:26,248 - 127.0.0.1 - - [15/Nov/2024 01:26:26] "GET /gigiriva?season=serie_a_2023_2024 HTTP/1.1" 200 -
+2024-11-15 01:27:20,694 - 127.0.0.1 - - [15/Nov/2024 01:27:20] "GET /gigiriva?season=serie_a_2022_2023 HTTP/1.1" 200 -
+2024-11-15 01:27:33,742 - 127.0.0.1 - - [15/Nov/2024 01:27:33] "GET /gigiriva?season=serie_a_2023_2024 HTTP/1.1" 200 -
+2024-11-15 01:27:40,374 - 127.0.0.1 - - [15/Nov/2024 01:27:40] "GET /gigiriva?season=serie_a_2022_2023 HTTP/1.1" 200 -
+2024-11-15 01:28:04,713 - 127.0.0.1 - - [15/Nov/2024 01:28:04] "GET /gigiriva?season=serie_a_1929_1930 HTTP/1.1" 200 -
+2024-11-15 01:28:41,154 - 127.0.0.1 - - [15/Nov/2024 01:28:41] "GET /gigiriva?season=serie_a_1929_1930 HTTP/1.1" 200 -
+2024-11-15 01:29:38,276 -  * Detected change in 'C:\\GigiRiva\\app.py', reloading
+2024-11-15 01:29:38,439 -  * Restarting with stat
+2024-11-15 01:31:21,724 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-15 01:31:21,725 - [33mPress CTRL+C to quit[0m
+2024-11-15 01:31:21,731 -  * Restarting with stat
+2024-11-15 01:31:37,949 -  * Debugger is active!
+2024-11-15 01:31:37,964 -  * Debugger PIN: 151-771-068
+2024-11-15 01:36:43,877 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-15 01:36:43,878 - [33mPress CTRL+C to quit[0m
+2024-11-15 01:36:43,883 -  * Restarting with stat
+2024-11-15 01:36:56,256 -  * Debugger is active!
+2024-11-15 01:36:56,269 -  * Debugger PIN: 151-771-068
+2024-11-15 01:37:18,989 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-15 01:37:18,990 - [33mPress CTRL+C to quit[0m
+2024-11-15 01:37:18,995 -  * Restarting with stat
+2024-11-15 01:37:21,540 -  * Debugger is active!
+2024-11-15 01:37:21,552 -  * Debugger PIN: 151-771-068
+2024-11-15 01:37:43,344 -  * Detected change in 'C:\\GigiRiva\\app.py', reloading
+2024-11-15 01:37:43,522 -  * Restarting with stat
+2024-11-15 01:37:59,828 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-15 01:37:59,829 - [33mPress CTRL+C to quit[0m
+2024-11-15 01:37:59,835 -  * Restarting with stat
+2024-11-15 01:38:14,006 -  * Debugger is active!
+2024-11-15 01:38:14,026 -  * Debugger PIN: 151-771-068
+2024-11-15 01:38:15,378 - 127.0.0.1 - - [15/Nov/2024 01:38:15] "GET /gigiriva?season=serie_a_1929_1930 HTTP/1.1" 200 -
+2024-11-15 01:41:59,441 -  * Detected change in 'C:\\GigiRiva\\app.py', reloading
+2024-11-15 01:41:59,611 -  * Restarting with stat
+2024-11-15 01:42:21,242 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-15 01:42:21,243 - [33mPress CTRL+C to quit[0m
+2024-11-15 01:42:21,248 -  * Restarting with stat
+2024-11-15 01:42:35,094 -  * Debugger is active!
+2024-11-15 01:42:35,113 -  * Debugger PIN: 151-771-068
+2024-11-15 01:42:37,318 - 127.0.0.1 - - [15/Nov/2024 01:42:37] "GET /gigiriva?season=serie_a_1929_1930 HTTP/1.1" 200 -
+2024-11-15 01:43:57,501 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-15 01:43:57,501 - [33mPress CTRL+C to quit[0m
+2024-11-15 01:43:57,507 -  * Restarting with stat
+2024-11-15 01:44:00,042 -  * Debugger is active!
+2024-11-15 01:44:00,053 -  * Debugger PIN: 151-771-068
+2024-11-15 01:44:13,941 -  * Detected change in 'C:\\GigiRiva\\app.py', reloading
+2024-11-15 01:44:14,131 -  * Restarting with stat
+2024-11-15 01:44:21,284 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-15 01:44:21,284 - [33mPress CTRL+C to quit[0m
+2024-11-15 01:44:21,290 -  * Restarting with stat
+2024-11-15 01:44:23,816 -  * Debugger is active!
+2024-11-15 01:44:23,828 -  * Debugger PIN: 151-771-068
+2024-11-15 01:44:39,124 -  * Detected change in 'C:\\GigiRiva\\app.py', reloading
+2024-11-15 01:44:39,323 -  * Restarting with stat
+2024-11-15 01:44:41,987 -  * Debugger is active!
+2024-11-15 01:44:41,999 -  * Debugger PIN: 151-771-068
+2024-11-15 01:46:26,487 -  * Detected change in 'C:\\GigiRiva\\app.py', reloading
+2024-11-15 01:46:26,648 -  * Restarting with stat
+2024-11-15 01:51:11,137 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-15 01:51:11,137 - [33mPress CTRL+C to quit[0m
+2024-11-15 01:51:11,143 -  * Restarting with stat
+2024-11-15 01:51:24,103 -  * Debugger is active!
+2024-11-15 01:51:24,116 -  * Debugger PIN: 151-771-068
+2024-11-15 01:52:02,231 -  * Detected change in 'C:\\GigiRiva\\app.py', reloading
+2024-11-15 01:52:02,419 -  * Restarting with stat
+2024-11-15 01:52:28,805 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-15 01:52:28,805 - [33mPress CTRL+C to quit[0m
+2024-11-15 01:52:28,810 -  * Restarting with stat
+2024-11-15 01:52:42,184 -  * Debugger is active!
+2024-11-15 01:52:42,197 -  * Debugger PIN: 151-771-068
+2024-11-15 01:54:59,320 -  * Detected change in 'C:\\GigiRiva\\app.py', reloading
+2024-11-15 01:54:59,480 -  * Restarting with stat
+2024-11-15 01:55:47,376 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-15 01:55:47,376 - [33mPress CTRL+C to quit[0m
+2024-11-15 01:55:47,381 -  * Restarting with stat
+2024-11-15 01:58:10,145 -  * Debugger is active!
+2024-11-15 01:58:10,158 -  * Debugger PIN: 151-771-068
+2024-11-15 01:58:10,683 - 127.0.0.1 - - [15/Nov/2024 01:58:10] "GET / HTTP/1.1" 200 -
+2024-11-15 01:58:10,773 - 127.0.0.1 - - [15/Nov/2024 01:58:10] "GET /gigiriva?season=serie_a_1929_1930 HTTP/1.1" 200 -
+2024-11-15 01:58:11,112 - 127.0.0.1 - - [15/Nov/2024 01:58:11] "[36mGET /static/logo.PNG HTTP/1.1[0m" 304 -
+2024-11-15 01:58:20,840 - 127.0.0.1 - - [15/Nov/2024 01:58:20] "GET /gigiriva HTTP/1.1" 200 -
+2024-11-15 01:59:04,934 -  * Detected change in 'C:\\GigiRiva\\salvagigi.py', reloading
+2024-11-15 01:59:05,293 -  * Restarting with stat
+2024-11-15 01:59:18,337 -  * Debugger is active!
+2024-11-15 01:59:18,353 -  * Debugger PIN: 151-771-068
+2024-11-15 01:59:33,657 - 127.0.0.1 - - [15/Nov/2024 01:59:33] "GET /gigiriva HTTP/1.1" 200 -
+2024-11-15 02:00:12,344 -  * Detected change in 'C:\\GigiRiva\\app.py', reloading
+2024-11-15 02:00:12,525 -  * Restarting with stat
+2024-11-15 02:00:32,845 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-15 02:00:32,845 - [33mPress CTRL+C to quit[0m
+2024-11-15 02:00:32,850 -  * Restarting with stat
+2024-11-15 02:00:45,032 -  * Debugger is active!
+2024-11-15 02:00:45,049 -  * Debugger PIN: 151-771-068
+2024-11-15 02:00:45,570 - 127.0.0.1 - - [15/Nov/2024 02:00:45] "GET /gigiriva HTTP/1.1" 200 -
+2024-11-15 02:00:45,574 - 127.0.0.1 - - [15/Nov/2024 02:00:45] "GET /gigiriva HTTP/1.1" 200 -
+2024-11-15 02:02:38,884 -  * Detected change in 'C:\\GigiRiva\\app.py', reloading
+2024-11-15 02:02:39,082 -  * Restarting with stat
+2024-11-15 02:03:57,754 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-15 02:03:57,755 - [33mPress CTRL+C to quit[0m
+2024-11-15 02:03:57,762 -  * Restarting with stat
+2024-11-15 02:04:00,469 -  * Debugger is active!
+2024-11-15 02:04:00,481 -  * Debugger PIN: 151-771-068
+2024-11-15 02:04:06,451 - 127.0.0.1 - - [15/Nov/2024 02:04:06] "GET /gigiriva HTTP/1.1" 200 -
+2024-11-15 02:04:14,292 - 127.0.0.1 - - [15/Nov/2024 02:04:14] "GET /gigiriva?season=serie_a_1930_1931 HTTP/1.1" 200 -
+2024-11-15 02:04:20,754 - 127.0.0.1 - - [15/Nov/2024 02:04:20] "GET /gigiriva?season=serie_a_1931_1932 HTTP/1.1" 200 -
+2024-11-15 02:04:30,983 - 127.0.0.1 - - [15/Nov/2024 02:04:30] "GET /gigiriva?season=serie_a_1932_1933 HTTP/1.1" 200 -
+2024-11-15 02:04:38,072 - 127.0.0.1 - - [15/Nov/2024 02:04:38] "GET / HTTP/1.1" 200 -
+2024-11-15 02:04:38,339 - 127.0.0.1 - - [15/Nov/2024 02:04:38] "[36mGET /static/logo.PNG HTTP/1.1[0m" 304 -
+2024-11-15 02:04:44,463 - 127.0.0.1 - - [15/Nov/2024 02:04:44] "GET /gigiriva HTTP/1.1" 200 -
+2024-11-15 02:05:58,209 - 127.0.0.1 - - [15/Nov/2024 02:05:58] "GET /gigiriva?season=serie_a_2003_2004 HTTP/1.1" 200 -
+2024-11-15 02:06:57,002 - 127.0.0.1 - - [15/Nov/2024 02:06:57] "GET /gigiriva?season=serie_a_2004_2005 HTTP/1.1" 200 -
+2024-11-15 02:07:03,263 - 127.0.0.1 - - [15/Nov/2024 02:07:03] "GET /gigiriva?season=serie_a_2023_2024 HTTP/1.1" 200 -
+2024-11-15 02:07:10,804 - 127.0.0.1 - - [15/Nov/2024 02:07:10] "GET /gigiriva?season=serie_a_2004_2005 HTTP/1.1" 200 -
+2024-11-15 02:07:16,222 - 127.0.0.1 - - [15/Nov/2024 02:07:16] "GET /gigiriva?season=serie_a_1952_1953 HTTP/1.1" 200 -
+2024-11-15 02:07:53,007 - 127.0.0.1 - - [15/Nov/2024 02:07:53] "GET /gigiriva?season=serie_a_1951_1952 HTTP/1.1" 200 -
+2024-11-15 02:08:16,516 - 127.0.0.1 - - [15/Nov/2024 02:08:16] "GET /gigiriva?season=serie_a_1952_1953 HTTP/1.1" 200 -
+2024-11-15 02:08:23,046 - 127.0.0.1 - - [15/Nov/2024 02:08:23] "GET /gigiriva?season=serie_a_1951_1952 HTTP/1.1" 200 -
+2024-11-15 02:08:57,404 - 127.0.0.1 - - [15/Nov/2024 02:08:57] "GET /gigiriva?season=serie_a_2006_2007 HTTP/1.1" 200 -
+2024-11-15 02:09:24,615 - 127.0.0.1 - - [15/Nov/2024 02:09:24] "GET /gigiriva?season=serie_a_2005_2006 HTTP/1.1" 200 -
+2024-11-15 02:10:00,887 - 127.0.0.1 - - [15/Nov/2024 02:10:00] "GET /gigiriva?season=serie_a_2006_2007 HTTP/1.1" 200 -
+2024-11-15 02:10:08,267 - 127.0.0.1 - - [15/Nov/2024 02:10:08] "GET /gigiriva?season=serie_a_2004_2005 HTTP/1.1" 200 -
+2024-11-15 02:10:10,201 - 127.0.0.1 - - [15/Nov/2024 02:10:10] "GET /gigiriva?season=serie_a_2003_2004 HTTP/1.1" 200 -
+2024-11-15 02:10:22,605 - 127.0.0.1 - - [15/Nov/2024 02:10:22] "GET /gigiriva?season=serie_a_2004_2005 HTTP/1.1" 200 -
+2024-11-15 02:10:26,578 - 127.0.0.1 - - [15/Nov/2024 02:10:26] "GET /gigiriva?season=serie_a_2003_2004 HTTP/1.1" 200 -
+2024-11-15 02:10:30,896 - 127.0.0.1 - - [15/Nov/2024 02:10:30] "GET /gigiriva?season=serie_a_1991_1992 HTTP/1.1" 200 -
+2024-11-15 02:10:37,577 - 127.0.0.1 - - [15/Nov/2024 02:10:37] "GET /gigiriva?season=serie_a_1992_1993 HTTP/1.1" 200 -
+2024-11-15 02:12:59,642 -  * Detected change in 'C:\\GigiRiva\\salvagigi.py', reloading
+2024-11-15 02:12:59,862 -  * Restarting with stat
+2024-11-15 02:13:16,357 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-15 02:13:16,357 - [33mPress CTRL+C to quit[0m
+2024-11-15 02:13:16,364 -  * Restarting with stat
+2024-11-15 02:13:18,977 -  * Debugger is active!
+2024-11-15 02:13:18,990 -  * Debugger PIN: 151-771-068
+2024-11-15 02:13:28,587 - 127.0.0.1 - - [15/Nov/2024 02:13:28] "GET /gigiriva?season=serie_a_1992_1993 HTTP/1.1" 200 -

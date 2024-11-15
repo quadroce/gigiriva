@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <title>Introduzione al Trofeo Rombo di Tuono</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .hero-section {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .hero-section h1 {
+            font-size: 2.5rem;
+        }
+        .hero-section img {
+            max-width: 200px;
+        }
+        .table-section {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .table-section h4 {
+            color: #343a40;
+        }
+        .intro-text {
+            line-height: 1.7;
+        }
+        .rules-list li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Includi il menu -->
+    {% include 'menu.html' %}
+
+    <!-- Sezione introduttiva con l'immagine e titolo -->
+    <div class="container mt-5">
+        <div class="hero-section mb-4">
+            <img src="{{ url_for('static', filename='logo.PNG') }}" alt="Trofeo Rombo di Tuono" class="img-fluid">
+            <h1 class="mt-3">Trofeo Rombo di Tuono</h1>
+            <p class="lead">Un trofeo simbolico che celebra la competizione tra le squadre della Serie A, basato su un concetto di "titolo itinerante".</p>
+        </div>
+
+        <div class="table-section">
+            <h3 class="mb-4">Introduzione al Trofeo Rombo di Tuono</h3>
+            <p class="intro-text">Il <strong>Trofeo Rombo di Tuono</strong> è un riconoscimento simbolico, ispirato ai campionati di Serie A, che assegna un "titolo itinerante" a una squadra sulla base dei risultati di ogni giornata di campionato. Il trofeo si basa su un principio semplice ma avvincente: la squadra che detiene il trofeo deve difenderlo partita dopo partita, affrontando ogni sfida come una "battaglia" per conservarlo. Solo un'altra squadra può "conquistarlo" sconfiggendo l'attuale detentore in una partita di campionato.</p>
+            
+            <h4>Regole del Trofeo Rombo di Tuono</h4>
+            <ul class="rules-list">
+                <li><strong>Assegnazione Iniziale del Trofeo</strong>: La prima squadra a ottenere il trofeo nella stagione inaugurale è il <strong>Bologna</strong>. Da quel momento in poi, ogni squadra che batte il detentore attuale in una partita di campionato conquista il trofeo e ne diventa il nuovo detentore.</li>
+                <li><strong>Conservazione del Trofeo</strong>: Il detentore del trofeo mantiene il titolo se vince o pareggia la partita successiva. In caso di vittoria, la sua "streak" di vittorie con il trofeo aumenta di 1. Se il detentore perde la partita, il trofeo passa automaticamente alla squadra vincitrice.</li>
+                <li><strong>Passaggio del Trofeo tra Stagioni</strong>: Alla fine di ogni stagione, la squadra che detiene il trofeo continua ad essere il detentore all’inizio della stagione successiva. Nel caso in cui una squadra retroceda in Serie B mentre è ancora detentrice del trofeo, il titolo torna alla squadra che lo aveva detenuto prima, o risale ai detentori precedenti fino a trovare una squadra ancora in Serie A.</li>
+                <li><strong>Streak e Numero di Trofei Conquistati</strong>: Ogni volta che una squadra difende con successo il trofeo in una vittoria consecutiva, la sua "streak" aumenta, rappresentando il numero di vittorie consecutive con il trofeo. Ogni volta che una squadra conquista il trofeo battendo il detentore, viene incrementato il conteggio dei "trofei conquistati" per quella squadra, anche se lo mantiene solo per una partita.</li>
+                <li><strong>Il Trofeo durante una Stagione</strong>: Solo le partite in cui gioca il detentore attuale sono valide per il mantenimento o la conquista del trofeo. Se il detentore non gioca una partita specifica (ad esempio, in un turno in cui la squadra è assente), quella partita viene ignorata.</li>
+            </ul>
+            
+            <p>Il Trofeo Rombo di Tuono è un modo unico per seguire l'andamento della Serie A, aggiungendo un livello di competizione interna tra le squadre. Ogni partita contro il detentore diventa una sfida per conquistare un simbolico titolo, e ogni difesa vittoriosa rappresenta un passo in più verso la creazione di una leggendaria "streak".</p>
+        </div>
+
+        <!-- Sezione della tabella con il detentore attuale -->
+        <!-- Sezione della tabella con il detentore attuale -->
+<div class="table-section mt-5">
+    <h4 class="text-center">Detentore Attuale del Trofeo Rombo di Tuono</h4>
+    <p class="text-center text-muted">Informazioni aggiornate sul detentore corrente del trofeo.</p>
+
+    <!-- Riga con stile migliorato per le informazioni del detentore -->
+    <div class="d-flex justify-content-center align-items-center mt-4">
+        <div class="card text-center shadow-sm" style="width: 20rem; border-radius: 10px;">
+            <div class="card-body">
+                <h5 class="card-title text-uppercase font-weight-bold mb-3" style="color: #343a40;">{{ attuale_detentore }}</h5>
+                <p class="card-text"><strong>Numero di Trofei Vinti:</strong> {{ titoli_vinti }}</p>
+                <p class="card-text"><strong>Streak Attuale:</strong> {{ streak }} partite consecutive</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+</body>
+</html>

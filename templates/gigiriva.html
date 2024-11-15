@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <title>Albo d'Oro - Trofeo Rombo di Tuono</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    {% include 'menu.html' %}
+    
+    <div class="container mt-5">
+        <h1 class="text-center">🏆 Albo d'Oro del Trofeo Rombo di Tuono 🏆</h1>
+        <hr>
+        
+        <form method="get" action="{{ url_for('gigiriva') }}">
+            <label for="season">Seleziona Stagione:</label>
+            <select name="season" id="season" class="form-control mb-3" onchange="this.form.submit()">
+                {% for season in seasons %}
+                    <option value="{{ season }}" {% if season == selected_season %}selected{% endif %}>{{ season }}</option>
+                {% endfor %}
+            </select>
+        </form>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Stagione</th>
+                    <th>Data</th>
+                    <th>Giornata</th>
+                    <th>Squadra in Casa</th>
+                    <th>Squadra in Trasferta</th>
+                    <th>Risultato</th>
+                    <th>Squadra Vincitrice</th>
+                    <th>Trofei Conquistati</th>
+                    <th>Streak</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for match in gigiriva_data %}
+                <tr>
+                    <td>{{ match['stagione'] }}</td>
+                    <td>{{ match['data'] }}</td>
+                    <td>{{ match['giornata'] }}</td>
+                    <td>{{ match['squadra_in_casa'] }}</td>
+                    <td>{{ match['squadra_in_trasferta'] }}</td>
+                    <td>{{ match['risultato'] }}</td>
+                    <td>{{ match['squadra_vincitrice'] }}</td>
+                    <td>{{ match['numero_di_trofei_conquistati'] }}</td>
+                    <td>{{ match['streak'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

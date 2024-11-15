@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <title>Statistiche Squadra - Trofeo Rombo di Tuono</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .stats-section {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .stat-title {
+            font-weight: bold;
+            color: #343a40;
+        }
+    </style>
+</head>
+<body>
+    {% include 'menu.html' %}
+
+    <div class="container mt-5">
+        <h1 class="text-center">📊 Statistiche Squadra - Trofeo Rombo di Tuono 📊</h1>
+        <hr>
+
+        <div class="form-group">
+            <label for="teamSelect">Seleziona una squadra:</label>
+            <select class="form-control" id="teamSelect" onchange="loadTeamStats()">
+                <!-- Opzioni popolate dinamicamente tramite JavaScript -->
+            </select>
+        </div>
+
+        <div id="statsContainer" class="stats-section mt-4">
+            <h3 id="teamName" class="text-center mb-4">Nome Squadra: </h3>
+            <p><span class="stat-title">Numero di Trofei:</span> <span id="trophyCount"></span></p>
+            <p><span class="stat-title">Numero di Settimane da Campione:</span> <span id="weeksChampion"></span></p>
+            <p><span class="stat-title">Streak più Lunga:</span> <span id="longestStreak"></span></p>
+            <p><span class="stat-title">Partita Inizio Streak:</span> <span id="streakStartMatch"></span></p>
+            <p><span class="stat-title">Partita Fine Streak:</span> <span id="streakEndMatch"></span></p>
+            <p><span class="stat-title">% di Vittoria in Partita Trofeo:</span> <span id="winPercentage"></span>%</p>
+            <p><span class="stat-title">Avversari più Frequenti:</span> <span id="frequentOpponents"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Caricamento iniziale delle squadre nel dropdown
+        async function loadTeams() {
+            const response = await fetch('/api/teams');  // Endpoint API per ottenere i nomi delle squadre
+            const teams = await response.json();
+            const teamSelect = document.getElementById('teamSelect');
+
+            teams.forEach(team => {
+                const option = document.createElement('option');
+                option.value = team.name;
+                option.textContent = team.name;
+                teamSelect.appendChild(option);
+            });
+        }
+
+        // Carica le statistiche della squadra selezionata
+        async function loadTeamStats() {
+            const selectedTeam = document.getElementById('teamSelect').value;
+            const response = await fetch(`/api/team_stats?team=${encodeURIComponent(selectedTeam)}`);
+            const stats = await response.json();
+
+            // Popola i dati nelle sezioni HTML
+            document.getElementById('teamName').textContent = `Nome Squadra: ${stats.name}`;
+            document.getElementById('trophyCount').textContent = stats.trophyCount;
+            document.getElementById('weeksChampion').textContent = stats.weeksChampion;
+            document.getElementById('longestStreak').textContent = stats.longestStreak;
+            document.getElementById('streakStartMatch').textContent = stats.streakStartMatch;
+            document.getElementById('streakEndMatch').textContent = stats.streakEndMatch;
+            document.getElementById('winPercentage').textContent = stats.winPercentage;
+            document.getElementById('frequentOpponents').textContent = stats.frequentOpponents.join(', ');
+        }
+
+        // Carica le squadre al caricamento della pagina
+        loadTeams();
+    </script>
+</body>
+</html>
